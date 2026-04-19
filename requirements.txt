@@ -7,3 +7,7 @@ pydantic==2.7.4
 openpyxl==3.1.5
 numpy==2.0.2
 python-multipart==0.0.9
+streamlit
+plotly
+seaborn
+matplotlib

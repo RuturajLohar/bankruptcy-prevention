@@ -26,5 +26,5 @@ COPY . .
 # Expose GCP Cloud Run's default port
 EXPOSE 8080
 
-# Command to run the FastAPI app with Uvicorn
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
+# Command to run the Streamlit dashboard on port 8080 (GCP Default)
+CMD ["streamlit", "run", "dashboard.py", "--server.port", "8080", "--server.address", "0.0.0.0"]

@@ -7,9 +7,10 @@ This project aims to predict the likelihood of business bankruptcy based on six 
 - `bankruptcy-prevention.xlsx`: Raw input data containing semicolon-separated risk scores.
 - `data_pipeline.py`: Cleans raw data, parses feature strings, and removes duplicates (Result: 103 unique samples).
 - `final_bankruptcy_model.py`: Performs an expanded comparison of **10 different machine learning models** using 10-fold cross-validation.
-- `main.py`: A professional **FastAPI backend** that serves the model over a REST API.
-- `Dockerfile`: A containerization configuration optimized for **GCP Cloud Run**.
-- `requirements.txt`: Minimal dependencies for the production environment.
+- `dashboard.py`: An interactive **Streamlit Dashboard** with live predictions and analytics.
+- `main.py`: A professional **FastAPI backend** (API fallback).
+- `Dockerfile`: A containerization configuration optimized for **GCP Cloud Run** (now launches the dashboard).
+- `requirements.txt`: Minimal dependencies including `streamlit` and `plotly` for the UI.
 - `run_all.py`: Master script to execute the entire training pipeline in sequence.
 
 ## Features (Data Dictionary)
